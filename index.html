@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Mindset Group, LLC</title>
+  <meta name="description" content="Open Mindset Group, LLC — Consulting & solutions. Duluth, GA." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #101826;
+      --text: #e8eef7;
+      --muted: #b7c3d6;
+      --accent: #7aa6ff;
+      --border: rgba(255,255,255,0.10);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(122,166,255,.18), transparent 55%),
+                  radial-gradient(900px 700px at 80% 20%, rgba(120,255,214,.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+    .card {
+      background: rgba(16,24,38,0.72);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,.35);
+    }
+    .top {
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: clamp(26px, 3.2vw, 40px);
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      user-select: none;
+    }
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .box {
+      grid-column: span 12;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    @media (min-width: 820px) {
+      .box.half { grid-column: span 6; }
+      .box.third { grid-column: span 4; }
+    }
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      color: var(--text);
+    }
+    ul { margin: 0; padding-left: 18px; color: var(--muted); }
+    li { margin: 6px 0; }
+    .cta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(122,166,255,0.14);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.button:hover { background: rgba(122,166,255,0.20); }
+    a.link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 0;
+    }
+    a.link:hover { text-decoration: underline; }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="top">
+        <div>
+          <h1>Open Mindset Group, LLC</h1>
+          <p class="tagline">
+            Practical consulting and solutions. Built for speed, clarity, and measurable results.
+          </p>
+        </div>
+        <div class="pill" title="Status">
+          <span>●</span> Accepting inquiries
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="box half">
+          <h2>What we do</h2>
+          <ul>
+            <li>Technology consulting & implementation</li>
+            <li>Operations, systems, and process improvement</li>
+            <li>Privacy-forward solutions and advisory</li>
+          </ul>
+        </div>
+
+        <div class="box half">
+          <h2>How it works</h2>
+          <ul>
+            <li>Short intake call → define scope and outcomes</li>
+            <li>Fixed-scope proposal (or hourly if appropriate)</li>
+            <li>Deliverables + documentation (no mystery meat)</li>
+          </ul>
+        </div>
+
+        <div class="box third">
+          <h2>Location</h2>
+          <div class="mono" style="color: var(--muted);">Duluth, GA (Remote-friendly)</div>
+        </div>
+
+        <div class="box third">
+          <h2>Business</h2>
+          <div class="mono" style="color: var(--muted);">Open Mindset Group, LLC</div>
+        </div>
+
+        <div class="box third">
+          <h2>Contact</h2>
+          <div style="color: var(--muted);">
+            Email: <span class="mono">contact@openmindsetgroup.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="button" href="mailto:contact@openmindsetgroup.com?subject=Inquiry%20%E2%80%94%20Open%20Mindset%20Group">
+          Email us
+        </a>
+        <a class="link" href="#" onclick="navigator.clipboard.writeText('contact@openmindsetgroup.com'); alert('Copied: contact@openmindsetgroup.com'); return false;">
+          Copy email
+        </a>
+      </div>
+
+      <footer>
+        <div>© <span id="y"></span> Open Mindset Group, LLC</div>
+        <div class="mono">openmindsetgroup.com</div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
