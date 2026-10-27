@@ -117,10 +117,20 @@
     }
 
     .app h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       font-family: var(--display);
       font-weight: 600;
       font-size: 1.35rem;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+    }
+
+    .app h2 img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      flex-shrink: 0;
     }
 
     .app p {
@@ -179,12 +189,12 @@
     <p class="label">Our apps</p>
     <div class="apps">
       <a class="app" href="https://cltready.app">
-        <h2>CLT Ready</h2>
+        <h2><img src="icons/cltready.png" alt="" width="40" height="40">CLT Ready</h2>
         <p>Practice for the Classic Learning Test, with timed practice tests and score tracking.</p>
         <span class="url">cltready.app</span>
       </a>
       <a class="app" href="https://petaly.app">
-        <h2>Petaly</h2>
+        <h2><img src="icons/petaly.png" alt="" width="40" height="40">Petaly</h2>
         <p>Private intimacy tracking that stays entirely on your device.</p>
         <span class="url">petaly.app</span>
       </a>
